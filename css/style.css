@@ -523,6 +523,140 @@ a {
 }
 
 
+/*design*/
+#design {
+	background-image: url(../img/design-bg.jpg);
+	background-color: rgba(0, 0, 0, .5);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-blend-mode: overlay;
+}
+.header-text__design {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	flex-basis: 100%;
+}
+.header-text__design>.logo-sup-text:after {
+	margin: 34px auto;
+}
+.header-text__design>.section2-text {
+	padding-bottom: 40px;
+}
+
+	/*form*/
+.contact-form {
+	justify-content: center;
+}
+
+.contact-form__input {
+	flex-basis: 45%;
+	align-items: flex-end; 
+	flex-direction: column;
+	margin-right: 10%;
+	position: relative;
+}
+.txt_fild {
+	width: 100%;
+	position: relative;
+}
+.txt_fild>input, textarea {
+	width: 100%;
+	border: none;
+	outline: none;
+  margin-top: 20px;
+	border-bottom: 1px solid #d6d6d6;
+	position: relative;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 14px;
+	resize: none;
+}
+.message {
+	flex-basis: 45%;
+	position: relative;
+}
+.submit-btn {
+	flex-basis: 20%;
+	margin: 40px;
+}
+.form-effect {
+	position: absolute;
+  top: 15px;
+  left: 10px;
+  color: #333;
+  opacity: .5;
+  transition: .2s ease;
+}
+.txt_fild>input:focus ~ .form-effect,
+.txt_fild>textarea:focus ~ .form-effect {
+	top: -5px;
+}
+.txt_fild>input:valid ~ .form-effect,
+.txt_fild>textarea:valid ~ .form-effect {
+	top: -5px;
+}
+.submit-btn {
+	width: 148px; height: 46px;
+	text-align: center;
+	background-color: #ff9b51;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 15px;
+	font-weight: 600;
+	color: #fff;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	box-shadow: 0 0 4px #333;
+	transition: .2s ease;
+}
+.submit-btn:hover {
+	transform: scale(1.01);
+	box-shadow: 0 0 6px #333;
+}
+
+
+/*footer*/
+footer {
+	background-color: #000;
+}
+footer>.container {
+	align-items: center;
+	flex-direction: column;
+	padding: 40px 0;
+}
+.social-item__footer {
+	width: 30px; height: 24px;
+	background-size: cover;
+}
+.twitter__footer {
+	background-position: -47px 0;
+}
+.google__footer {
+	background-position: -99px 0;
+}
+.pinterest__footer {
+	background-position: -147px 0;
+}
+.instagram__footer {
+	background-position: -200px 0;
+}
+.soc__footer {
+	background-position: -250px 0;
+}
+.wi-fi__footer {
+	background-position: -300px 0;
+}
+footer p {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 12px;
+	font-weight: normal;
+	color: rgba(255, 255, 255, 0.5);
+	padding-top: 20px;
+}
+
+
 
 
 
@@ -619,5 +753,12 @@ a {
 	/*awesome*/
 		.section-items {
 		flex-basis: 100%;
+	}
+
+	/*form*/
+	.contact-form__input, .message {
+		flex-basis: 80%;
+		margin-right: 0;
+		margin-top: 40px;
 	}
 }
