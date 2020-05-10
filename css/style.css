@@ -585,6 +585,7 @@ a {
 	position: absolute;
   top: 15px;
   left: 10px;
+  font-size: 16px;
   color: #333;
   opacity: .5;
   transition: .2s ease;
@@ -592,10 +593,12 @@ a {
 .txt_fild>input:focus ~ .form-effect,
 .txt_fild>textarea:focus ~ .form-effect {
 	top: -5px;
+	font-size: 14px;
 }
 .txt_fild>input:valid ~ .form-effect,
 .txt_fild>textarea:valid ~ .form-effect {
 	top: -5px;
+	font-size: 14px;
 }
 .submit-btn {
 	width: 148px; height: 46px;
